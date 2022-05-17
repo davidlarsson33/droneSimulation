@@ -1,0 +1,26 @@
+.container{
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    
+    color: white;
+    position: absolute;
+    top: 220px;
+    right: 100px;
+    width: 200px;
+    height: 150px;
+    
+}
+body{
+    background: url('https://cdn.pixabay.com/photo/2018/01/14/23/12/nature-3082832__480.jpg');
+}
+
+.container .weather-item{
+    background: rgba(24, 24, 27, 0.6);
+    display: flex;
+    justify-content: space-between ;
+    width: 250px;
+    
+    font-size: 25px;
+    padding: 10px;
+    border-radius: 20px;
+    border: 1px solid white;
+}
