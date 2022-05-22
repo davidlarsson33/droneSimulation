@@ -8,7 +8,7 @@
     color: white;
     position: absolute;
     top: 420px;
-    right:900px;
+    right:1000px;
     width: 200px;
     height: 150px;
     
@@ -41,8 +41,8 @@
   </script>
   <script type="text/javascript">
     function Submit() {
-      var from_addr = document.getElementById('faddr').value;
-      var to_addr = document.getElementById('taddr').value;
+      var from_addr = "fagottgränden 23";
+      var to_addr = "bangatan 1";
       var data = { "faddr": from_addr,
                    "taddr": to_addr,
                  }
@@ -67,7 +67,7 @@
   .title{
     position: absolute;
     left: 550px;
-    top: 80px;
+    top: 20px;
     font-size: 80px;
     font-style: italic;
     font-family:Verdana, Tahoma;  
@@ -78,7 +78,7 @@
 
 
 <body style="background-image: url('https://wonderfulengineering.com/wp-content/uploads/2014/07/black-wallpapers-28.jpg');">
-  <p style="color:bisque; font-family: Verdana, Tahoma; font-size: 30px; position: absolute; left:1900px;top:400px">Current Position of drone </p>
+  <p style="color:bisque; font-family: Verdana, Tahoma; font-size: 30px; position: absolute; left:1750px;top:400px">Position:</p>
   <p class="title"> Map over Lund</p>
   <div class="container" id="weather-items">
   
@@ -130,14 +130,14 @@
 
 
 
-  <div style="color:bisque; font-family: Verdana, Tahoma; font-size: 30px; position: absolute; left:1900px;top:500px" id="txt"></div>
-  <div style="color:bisque; font-family: Verdana, Tahoma; font-size: 30px; position: absolute; left:1900px;top:550px" id="txt2"></div>
+  <div style="color:bisque; font-family: Verdana, Tahoma; font-size: 30px; position: absolute; left:1750px;top:500px" id="txt"></div>
+  <div style="color:bisque; font-family: Verdana, Tahoma; font-size: 30px; position: absolute; left:1750px;top:560px" id="txt2"></div>
   <form action="javascript:Submit()">
-    <label style="color:bisque; font-family: Verdana, Tahoma; font-size: 30px; position: absolute; left:1460px;top:700px" for="fname">From adress:</label><br>
-    <input style="background-color:bisque; font-family: Verdana, Tahoma; font-size: 30px; position: absolute; left:1460px;top:750px" type="text" id="faddr" name="faddr"><br>
-    <label style="color:bisque; font-family: Verdana, Tahoma; font-size: 30px; position: absolute; left:1900px;top:700px" for="lname">To adress:</label><br>
-    <input style="background-color:bisque; font-family: Verdana, Tahoma; font-size: 30px; position: absolute; left:1900px;top:750px" type="text" id="taddr" name="taddr"><br><br>
-    <input style="background-color:bisque; font-family: Verdana, Tahoma; font-size: 30px; position: absolute; left:1750px;top:850px" type="Submit" value="Search addresses">
+    <label style="color:bisque; font-family: Verdana, Tahoma; font-size: 30px; position: absolute; left:1350px;top:700px" for="fname">From adress:</label><br>
+    <p style="color:bisque; font-family: Verdana, Tahoma; font-size: 30px; position: absolute; left:1350px;top:750px">Fagottgränden 23</p>
+    <label style="color:bisque; font-family: Verdana, Tahoma; font-size: 30px; position: absolute; left:1750px;top:700px" for="lname">To adress:</label><br>
+    <p style="color:bisque; font-family: Verdana, Tahoma; font-size: 30px; position: absolute; left:1750px;top:750px">Bangatan 1</p>
+    <input style="background-color:bisque; font-family: Verdana, Tahoma; font-size: 30px; position: absolute; left:1650px;top:850px" type="Submit" value="Start">
   </form>
   <object id="map" data="static/images/lund-map.svg" type="image/svg+xml" ></object> <!-- byt map.svg till lund-map.svg för vanlig karta-->
   <script type="text/javascript" src="static/js/load.js"></script>
